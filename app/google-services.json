@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "951906234257",
+    "project_id": "ferterlizer-38add",
+    "storage_bucket": "ferterlizer-38add.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951906234257:android:2a1dddb7946c799e6ab430",
+        "android_client_info": {
+          "package_name": "com.example.ferterlizer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN5uydLGrj_rtvLyUGGwh4Xn18AiY0c14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
