@@ -4,26 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="LoginActivity"
+    tools:context="Userlogin"
     android:background="@drawable/growing">
 
-    <TextView android:id="@+id/main"
+    <TextView
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="AdminLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:text="@string/userlogin"
+        android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="83dp"
-        tools:ignore="MissingConstraints"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/inputEmail"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@id/inputEmail"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/inputPassword"
-        app:layout_constraintStart_toStartOf="@id/inputPassword"/>
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/inputPassword"
@@ -91,8 +91,6 @@
         app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
 
     <LinearLayout
-
-
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

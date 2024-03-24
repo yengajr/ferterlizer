@@ -2,7 +2,8 @@ package com.example.ferterlizer;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,28 +11,33 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-    TextView textView;
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
+        Button btn = findViewById(R.id.adminButton);
+        btn.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+        });
+
+        Button user = findViewById(R.id.userButton);
+        user.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, Userlogin.class));
+        });
+
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        textView = findViewById(R.id.textView1);
 
-        textView.setOnClickListener(v -> {
-
-            // move to login activity
-            Intent intent = new Intent(this, HomeActivity.class);
-            startActivity(intent);
-
-        });
     }
+
+
 }

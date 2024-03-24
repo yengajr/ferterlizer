@@ -44,6 +44,9 @@ public class RegisterAcivity extends AppCompatActivity {
 
         Button btn=findViewById(R.id.btnRegister);
         TextView txtAccount=findViewById(R.id.alreadyHaveAccount);
+        txtAccount.setOnClickListener(v -> {
+            startActivity(new Intent(RegisterAcivity.this, LoginActivity.class));
+        });
 
         EditText email=findViewById(R.id.inputEmail);
         EditText password=findViewById(R.id.inputPassword);

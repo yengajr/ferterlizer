@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green Harvest Connect"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"/>
+
+        <Button
+            android:id="@+id/adminButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/ad"
+            android:text="Admin"
+            android:textColor="@color/design_default_color_primary_variant" />
+
+        <Button
+            android:id="@+id/userButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adminButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ad"
+            android:text="User"
+            android:textColor="@color/design_default_color_primary_variant" />
+
+        <Button
+            android:id="@+id/distributorButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ad"
+            android:text="Distributor"
+            android:textColor="@color/design_default_color_primary_variant" />
+
+        <Button
+            android:id="@+id/deliveryPersonnelButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distributorButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ad"
+            android:text="Delivery Personnel"
+            android:textColor="@color/design_default_color_primary_variant" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
